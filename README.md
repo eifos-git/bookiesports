@@ -1,16 +1,163 @@
-# BookieSports
+# Bookiesports Multiple Assets
 
-![](https://img.shields.io/pypi/v/bookiesports.svg?style=for-the-badge)
-![](https://img.shields.io/github/downloads/pbsa/bookiesports/total.svg?style=for-the-badge)
-![](https://img.shields.io/pypi/pyversions/bookiesports.svg?style=for-the-badge)
+Version history
+#### .22
+------
 
-[![docs master](https://readthedocs.org/projects/bookiesports/badge/?version=latest)](http://bookiesports.rtfd.io/en/latest/)
+Changes: Add NBA multi-asset to both Alice and Beatrice
 
-`bookiesports` is a module that contains the management information for
-BOS. This management information describes which sports are supported,
-which leagues and participants are available and how and what betting
-markets are created and resolved.
+##### Alice Multiple:
+* AmericanFootball: All leagues
+* Soccer: SLL
+* Baseball: WorldSeries
+* Ice Hockey: All leagues
+* Basketball: All leagues
+##### Alice Single:
+* Baseball: RegSeas, Playoffs
+* Soccer: CL, EuropaLeague, FACup, InternationalFriendlies, SER-A
 
-## Documentation
+##### Beatrice Multiple:
+* AmericanFootball: All leagues
+* Soccer: SLL
+* Baseball: WorldSeries
+* Ice Hockey: All leagues
+* Basketball: All leagues
+##### Beatrice Single:
+* Baseball: RegSeas, Playoffs
+* Soccer: CL, EPL, EuropaLeague, FACup, InternationalFriendlies, SER-A
 
-[![docs master](https://readthedocs.org/projects/bookiesports/badge/?version=latest)](http://bookiesports.rtfd.io/en/latest/)
+
+#### .21
+------
+
+Changes: Add NHL multi-asset to both Alice and Beatrice
+
+##### Alice Multiple:
+* AmericanFootball: All leagues
+* Soccer: SLL
+* Baseball: WorldSeries
+* Ice Hockey: All leagues
+##### Alice Single:
+* Baseball: RegSeas, Playoffs
+* Basketball: All leagues
+* Soccer: CL, EuropaLeague, FACup, InternationalFriendlies, SER-A
+
+##### Beatrice Multiple:
+* AmericanFootball: All leagues
+* Soccer: SLL
+* Baseball: WorldSeries
+* Ice Hockey: All leagues
+##### Beatrice Single:
+* Baseball: RegSeas, Playoffs
+* Basketball: All leagues
+* Soccer: CL, EPL, EuropaLeague, FACup, InternationalFriendlies, SER-A
+
+
+#### .20
+------
+
+Changes: Remove EPL from Alice
+
+##### Alice Multiple:
+* AmericanFootball: All leagues
+* Soccer: SLL
+* Baseball: WorldSeries
+##### Alice Single:
+* Baseball: RegSeas, Playoffs
+* Basketball: All leagues
+* Ice Hockey: All leagues
+* Soccer: CL, EuropaLeague, FACup, InternationalFriendlies, SER-A
+
+##### Beatrice Multiple:
+* AmericanFootball: All leagues
+* Soccer: SLL
+* Baseball: WorldSeries
+##### Beatrice Single:
+* Baseball: RegSeas, Playoffs
+* Basketball: All leagues
+* Ice Hockey: All leagues
+* Soccer: CL, EPL, EuropaLeague, FACup, InternationalFriendlies, SER-A
+
+
+#### .19
+------
+##### Alice Multiple:
+* AmericanFootball: All leagues
+* Soccer: SLL
+* Baseball: WorldSeries
+##### Alice Single:
+* Baseball: RegSeas, Playoffs
+* Basketball: All leagues
+* Ice Hockey: All leagues
+* Soccer: CL, EPL, EuropaLeague, FACup, InternationalFriendlies, SER-A
+
+##### Beatrice Multiple:
+* AmericanFootball: All leagues
+* Soccer: SLL
+* Baseball: WorldSeries
+##### Beatrice Single:
+* Baseball: RegSeas, Playoffs
+* Basketball: All leagues
+* Ice Hockey: All leagues
+* Soccer: CL, EPL, EuropaLeague, FACup, InternationalFriendlies, SER-A
+
+
+#### .18
+------
+##### Alice Multiple:
+* AmericanFootball: All leagues
+* Soccer: SLL
+##### Alice Single:
+* Baseball: All leagues
+* Basketball: All leagues
+* Ice Hockey: All leagues
+* Soccer: CL, EPL, EuropaLeague, FACup, InternationalFriendlies, SER-A
+
+##### Beatrice Multiple:
+* AmericanFootball: All leagues
+* Soccer: SLL
+##### Beatrice Single:
+* Baseball: All leagues
+* Basketball: All leagues
+* Ice Hockey: All leagues
+* Soccer: CL, EPL, EuropaLeague, FACup, InternationalFriendlies, SER-A
+
+
+#### .17
+------
+##### Alice Multiple:
+* AmericanFootball: All leagues
+##### Alice Single:
+* Baseball: All leagues
+* Basketball: All leagues
+* Ice Hockey: All leagues
+* Soccer: All leagues
+
+##### Beatrice Multiple:
+* AmericanFootball: All leagues
+* Soccer: SLL
+##### Beatrice Single:
+* Baseball: All leagues
+* Basketball: All leagues
+* Ice Hockey: All leagues
+* Soccer: CL, EPL, EuropaLeague, FACup, InternationalFriendlies, SER-A
+
+#### .16
+------
+##### Alice Multiple:
+* AmericanFootball: All leagues
+##### Alice Single:
+* Baseball: All leagues
+* Basketball: All leagues
+* Ice Hockey: All leagues
+* Soccer: All leagues
+
+##### Beatrice Multiple:
+* AmericanFootball: All leagues
+* Soccer: All leagues
+* Baseball: All leagues
+* Basketball: All leagues
+* Ice Hockey: All leagues
+
+##### Beatrice Single:
+* none

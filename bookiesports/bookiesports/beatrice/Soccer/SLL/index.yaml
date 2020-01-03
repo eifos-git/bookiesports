@@ -30,14 +30,14 @@ participants: "SLL_Teams_2019-20"
 
 # Define the betting market groups (each one has a subfolder)
 bettingmarketgroups:
-    - Soccer_MO_1
-    - Soccer_OU_0.5_1
-    - Soccer_OU_1.5_1
-    - Soccer_OU_2.5_1
-    - Soccer_OU_3.5_1
-    - Soccer_OU_4.5_1
-    - Soccer_OU_5.5_1
-    - Soccer_OU_6.5_1
+    - Soccer_MO_2
+    - Soccer_OU_0.5_2
+    - Soccer_OU_1.5_2
+    - Soccer_OU_2.5_2
+    - Soccer_OU_3.5_2
+    - Soccer_OU_4.5_2
+    - Soccer_OU_5.5_2
+    - Soccer_OU_6.5_2
 
 # How are individual Events named (naming scheme)
 eventscheme:

@@ -32,7 +32,7 @@ participants: "NFL_Teams_2019-20"
 
 # Define the betting market groups
 bettingmarketgroups:
-    - NFL_ML_1
+    - NFL_ML_2
 
 # How are individual Events named (naming scheme)
 eventscheme:

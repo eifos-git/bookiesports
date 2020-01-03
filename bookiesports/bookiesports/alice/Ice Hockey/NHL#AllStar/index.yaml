@@ -41,7 +41,7 @@ participants: "NHL_Teams_2019-20"
 
 # Define the betting market groups
 bettingmarketgroups:
-    - NHL_ML_1
+    - NHL_ML_2
 
 # How are individual Events named (naming scheme)
 eventscheme:

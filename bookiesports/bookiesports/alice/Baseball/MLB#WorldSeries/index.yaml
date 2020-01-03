@@ -35,7 +35,7 @@ participants: "MLB_Teams_2019-20"
 
 # Define the betting market groups
 bettingmarketgroups:
-    - MLB_ML_1
+    - MLB_ML_2
 
 # How are individual Events named (naming scheme)
 eventscheme:

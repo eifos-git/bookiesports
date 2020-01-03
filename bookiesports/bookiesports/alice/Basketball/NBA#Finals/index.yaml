@@ -30,7 +30,7 @@ participants: "NBA_Teams_2019-20"
 
 # Define the betting market groups
 bettingmarketgroups:
-    - NBA_ML_1
+    - NBA_ML_2
 
 # How are individual Events named (naming scheme)
 eventscheme:
