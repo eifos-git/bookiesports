@@ -1,7 +1,7 @@
 from . import BookieSports, datestring
 import logging
-import pytz
-
+from pytz import timezone
+from . import log
 
 class NotNormalizableException(Exception):
     pass
@@ -51,7 +51,6 @@ class IncidentsNormalizer(object):
                               errorIfNotFound=False):
         """
         Tries to find the sport in bookiesports and returns its identifier.
-
         :param sport_name_in_incident: name given by provider
         :type sport_name_in_incident: str
         :returns the normalized sport name
@@ -101,10 +100,19 @@ class IncidentsNormalizer(object):
             return True
 
         start_date = datestring.string_to_date(start_date)
-        #convert the naive timezone to UTC
-        tz = pytz.timezone("UTC")
-        start_date = tz.localize(start_date)		
-        return start_date <= self._string_to_date(eventgroup["finish_date"], "to") and start_date >= self._string_to_date(eventgroup["start_date"], "from")
+
+        try:
+            toReturn = start_date <= self._string_to_date(eventgroup["finish_date"], "to") and start_date >= self._string_to_date(eventgroup["start_date"], "from")
+        except TypeError:
+            log.warning("datetime offset naive, failed")
+
+        try:
+            _timezone = timezone('UTC')
+            start_date = _timezone.localize(start_date)
+            toReturn = start_date <= self._string_to_date(eventgroup["finish_date"], "to") and start_date >= self._string_to_date(eventgroup["start_date"], "from")
+        except TypeError: 
+            log.warning("datetime offset aware, failed")
+        return toReturn
 
     def _get_eventgroup_identifier(self,
                                    sport_identifier,
@@ -113,7 +121,6 @@ class IncidentsNormalizer(object):
                                    errorIfNotFound=False):
         """
         Tries to find the eventgroup in bookiesports and returns its identifier.
-
         :param sport_identifier: name given by provider
         :type sport_identifier: str
         :param event_group_name_in_incident: name given by provider
@@ -142,7 +149,6 @@ class IncidentsNormalizer(object):
                                     errorIfNotFound=False):
         """
         Tries to find the participant in bookiesports and returns its identifier.
-
         :param sport_identifier: name given by provider
         :type sport_identifier: str
         :param event_group_identifier: name given by provider
